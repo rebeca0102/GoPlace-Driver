@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7868C1FB270A0048002A4E67 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868C1FA270A0048002A4E67 /* RecoverPasswordViewController.swift */; };
+		7868C1FD270A006C002A4E67 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868C1FC270A006C002A4E67 /* NewPasswordViewController.swift */; };
 		78CE5E77270942E7003A90D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E76270942E7003A90D4 /* AppDelegate.swift */; };
 		78CE5E79270942E7003A90D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E78270942E7003A90D4 /* SceneDelegate.swift */; };
-		78CE5E7B270942E7003A90D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E7A270942E7003A90D4 /* ViewController.swift */; };
 		78CE5E7E270942E7003A90D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CE5E7C270942E7003A90D4 /* Main.storyboard */; };
 		78CE5E80270942E8003A90D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CE5E7F270942E8003A90D4 /* Assets.xcassets */; };
 		78CE5E83270942E8003A90D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CE5E81270942E8003A90D4 /* LaunchScreen.storyboard */; };
+		78CE5E8B2709438D003A90D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E8A2709438D003A90D4 /* LoginViewController.swift */; };
+		78CE5E8D27095EAD003A90D4 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CE5E8C27095EAD003A90D4 /* Imagenes.xcassets */; };
+		78CE5E8F2709686C003A90D4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E8E2709686C003A90D4 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7868C1FA270A0048002A4E67 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		7868C1FC270A006C002A4E67 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		78CE5E73270942E7003A90D4 /* GoPlace-Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoPlace-Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CE5E76270942E7003A90D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CE5E78270942E7003A90D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78CE5E7A270942E7003A90D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78CE5E7D270942E7003A90D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78CE5E7F270942E8003A90D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78CE5E82270942E8003A90D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78CE5E84270942E8003A90D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CE5E8A2709438D003A90D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78CE5E8C27095EAD003A90D4 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
+		78CE5E8E2709686C003A90D4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				78CE5E76270942E7003A90D4 /* AppDelegate.swift */,
 				78CE5E78270942E7003A90D4 /* SceneDelegate.swift */,
-				78CE5E7A270942E7003A90D4 /* ViewController.swift */,
 				78CE5E7C270942E7003A90D4 /* Main.storyboard */,
 				78CE5E7F270942E8003A90D4 /* Assets.xcassets */,
 				78CE5E81270942E8003A90D4 /* LaunchScreen.storyboard */,
 				78CE5E84270942E8003A90D4 /* Info.plist */,
+				78CE5E8A2709438D003A90D4 /* LoginViewController.swift */,
+				78CE5E8C27095EAD003A90D4 /* Imagenes.xcassets */,
+				78CE5E8E2709686C003A90D4 /* SignUpViewController.swift */,
+				7868C1FA270A0048002A4E67 /* RecoverPasswordViewController.swift */,
+				7868C1FC270A006C002A4E67 /* NewPasswordViewController.swift */,
 			);
 			path = "GoPlace-Driver";
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			files = (
 				78CE5E83270942E8003A90D4 /* LaunchScreen.storyboard in Resources */,
 				78CE5E80270942E8003A90D4 /* Assets.xcassets in Resources */,
+				78CE5E8D27095EAD003A90D4 /* Imagenes.xcassets in Resources */,
 				78CE5E7E270942E7003A90D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78CE5E7B270942E7003A90D4 /* ViewController.swift in Sources */,
+				78CE5E8B2709438D003A90D4 /* LoginViewController.swift in Sources */,
 				78CE5E77270942E7003A90D4 /* AppDelegate.swift in Sources */,
+				7868C1FD270A006C002A4E67 /* NewPasswordViewController.swift in Sources */,
+				78CE5E8F2709686C003A90D4 /* SignUpViewController.swift in Sources */,
+				7868C1FB270A0048002A4E67 /* RecoverPasswordViewController.swift in Sources */,
 				78CE5E79270942E7003A90D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
