@@ -11,6 +11,10 @@ class NewPasswordViewController: UIViewController{
     
     @IBOutlet weak var txtCorreoNC: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     @IBAction func clickBtnArrowBackToRecover(_ sender: Any) {
         self.navigationController?.popViewController( animated: true)
     }

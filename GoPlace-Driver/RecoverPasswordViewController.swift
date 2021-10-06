@@ -11,6 +11,9 @@ class RecoverPasswordViewController: UIViewController{
  
     @IBOutlet weak var txtCorreoRP: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     @IBAction func clickBtnArrowBackToLogin(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }

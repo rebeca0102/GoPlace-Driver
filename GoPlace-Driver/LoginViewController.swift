@@ -14,13 +14,13 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var txtCorreo: UITextField!
     
     
-    //override func viewDidLoad() {
-      //  super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         //txtCorreo.layer.borderWidth = 1
         //txtCorreo.layer.borderColor = //UIColor.systemGray2.cgColor
-    //}
+    }
 
-
+    
     @IBAction func swipeToOpenKeyboard(_ sender: Any) {
         self.txtCorreo.becomeFirstResponder()
     }
@@ -30,6 +30,7 @@ class LoginViewController: UIViewController{
     @IBAction func tapToCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.registerKeyboardNotification()

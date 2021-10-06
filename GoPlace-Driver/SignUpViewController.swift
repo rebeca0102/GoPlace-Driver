@@ -13,6 +13,9 @@ class SignUpViewController: UIViewController{
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var anchorCenteryViewContent: NSLayoutConstraint!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     @IBAction func clickBtnSignUpBackToLogin(_ sender: Any) {
         self.showAlertToBack(title: "Listo!", message: "Se registraron tus datos correctamente, ahora puedes iniciar sesión.", acceptButton: "Aceptar")
     }
