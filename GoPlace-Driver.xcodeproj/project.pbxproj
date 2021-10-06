@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7817AC2A270D3F3400EECD6C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817AC29270D3F3400EECD6C /* AlertManager.swift */; };
 		7868C1FB270A0048002A4E67 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868C1FA270A0048002A4E67 /* RecoverPasswordViewController.swift */; };
 		7868C1FD270A006C002A4E67 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868C1FC270A006C002A4E67 /* NewPasswordViewController.swift */; };
 		78CE5E77270942E7003A90D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE5E76270942E7003A90D4 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7817AC29270D3F3400EECD6C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		7868C1FA270A0048002A4E67 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
 		7868C1FC270A006C002A4E67 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		78CE5E73270942E7003A90D4 /* GoPlace-Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoPlace-Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7817AC28270D3F1000EECD6C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				7817AC29270D3F3400EECD6C /* AlertManager.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		78CE5E6A270942E7003A90D4 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		78CE5E75270942E7003A90D4 /* GoPlace-Driver */ = {
 			isa = PBXGroup;
 			children = (
+				7817AC28270D3F1000EECD6C /* General */,
 				78CE5E76270942E7003A90D4 /* AppDelegate.swift */,
 				78CE5E78270942E7003A90D4 /* SceneDelegate.swift */,
 				78CE5E7C270942E7003A90D4 /* Main.storyboard */,
@@ -156,6 +167,7 @@
 				7868C1FD270A006C002A4E67 /* NewPasswordViewController.swift in Sources */,
 				78CE5E8F2709686C003A90D4 /* SignUpViewController.swift in Sources */,
 				7868C1FB270A0048002A4E67 /* RecoverPasswordViewController.swift in Sources */,
+				7817AC2A270D3F3400EECD6C /* AlertManager.swift in Sources */,
 				78CE5E79270942E7003A90D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

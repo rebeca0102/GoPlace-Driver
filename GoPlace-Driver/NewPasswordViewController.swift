@@ -11,6 +11,9 @@ class NewPasswordViewController: UIViewController{
     
     @IBOutlet weak var txtCorreoNC: UITextField!
     
+    @IBAction func clickBtnArrowBackToRecover(_ sender: Any) {
+        self.navigationController?.popViewController( animated: true)
+    }
     @IBAction func tapCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -21,5 +24,9 @@ class NewPasswordViewController: UIViewController{
     
     @IBAction func swipeTocloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
+    }
+    
+    @IBAction func clickBtnBackToLogin(_ sender: Any) {
+        self.showAlertNewPassword(title: "Listo!", message: "Ya se actualizó la contraseña, vuelve a iniciar sesión.", acceptButton: "Ok!")
     }
 }

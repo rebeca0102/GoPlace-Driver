@@ -11,6 +11,9 @@ class RecoverPasswordViewController: UIViewController{
  
     @IBOutlet weak var txtCorreoRP: UITextField!
     
+    @IBAction func clickBtnArrowBackToLogin(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     @IBAction func tapCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -29,6 +32,8 @@ class RecoverPasswordViewController: UIViewController{
         print("Envío de enlace")
         print("Validando")
         print("Redirigiendo al View Nueva Contraseña")
-        self.performSegue(withIdentifier: "NewPasswordViewController", sender: nil)
+        
+        self.showAlert(title: "Listo!", message: "Se envio un link a tu correo para reestablecer la contraseña.", acceptButton: "Ok!",identifierSegue: "NewPasswordViewController")
     }
+
 }
