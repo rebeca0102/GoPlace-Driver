@@ -27,6 +27,6 @@ class NewPasswordViewController: UIViewController{
     }
     
     @IBAction func clickBtnBackToLogin(_ sender: Any) {
-        self.showAlertNewPassword(title: "Listo!", message: "Ya se actualizó la contraseña, vuelve a iniciar sesión.", acceptButton: "Ok!")
+        self.showAlertToBack(title: "Listo!", message: "Ya se actualizó la contraseña, vuelve a iniciar sesión.", acceptButton: "Ok!")
     }
 }

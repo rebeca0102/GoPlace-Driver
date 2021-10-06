@@ -18,7 +18,7 @@ extension UIViewController{
         self.present(alert,animated: true,completion: nil)
     }
     
-    func showAlertNewPassword(title: String, message: String, acceptButton: String){
+    func showAlertToBack(title: String, message: String, acceptButton: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let acceptAction = UIAlertAction(title: acceptButton, style: .default) { action in
             self.navigationController?.popToRootViewController(animated: true)
