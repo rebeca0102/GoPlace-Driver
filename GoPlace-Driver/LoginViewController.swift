@@ -15,7 +15,7 @@ class LoginViewController: UIViewController{
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+       super.viewDidLoad()
         //txtCorreo.layer.borderWidth = 1
         //txtCorreo.layer.borderColor = //UIColor.systemGray2.cgColor
     }
