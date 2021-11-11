@@ -364,7 +364,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3888" y="-772"/>
+            <point key="canvasLocation" x="3897" y="-778"/>
         </scene>
         <!--Recover Password View Controller-->
         <scene sceneID="rHN-8w-1AL">

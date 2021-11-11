@@ -17,6 +17,9 @@ class RecoverPasswordViewController: UIViewController{
         super.viewDidLoad()
         self.lblTitulo.text = "Recuperar\ncontraseña"
     }
+    
+    //MARK: - Acciones
+    
     @IBAction func clickBtnArrowBackToLogin(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
