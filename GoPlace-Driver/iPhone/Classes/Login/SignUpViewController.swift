@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController{
     @IBOutlet weak var txtClave                 : UITextField!
     
     //MARK: - Ciclo de vida
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
@@ -30,6 +31,20 @@ class SignUpViewController: UIViewController{
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.unregisterKeyboardNotification()
+    }
+    
+    //MARK: - Acciones
+    
+    @IBAction func clickBtnSignUpBackToLogin(_ sender: Any) {
+        self.ValidarYRegistrar()
+    }
+    
+    @IBAction func clickBtnBackToLogin(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func tapTocloseKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
     }
     
     //MARK: - Funciones
@@ -78,22 +93,9 @@ class SignUpViewController: UIViewController{
             }
         }
     }
-
-
-    @IBAction func clickBtnSignUpBackToLogin(_ sender: Any) {
-        self.ValidarYRegistrar()
-    }
-    
-    
-    @IBAction func clickBtnBackToLogin(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    @IBAction func tapTocloseKeyboard(_ sender: Any) {
-        self.view.endEditing(true)
-    }
-    
 }
 
+//MARK: SignUpViewController - Observers
 extension SignUpViewController{
     
      func registerKeyabordNotification() {

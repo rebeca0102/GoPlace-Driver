@@ -14,13 +14,12 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var txtClave: UITextField!
     @IBOutlet weak var cnsBottomClave: NSLayoutConstraint!
     
-
     //MARK: - Ciclo de vida
+    
     override func viewDidLoad() {
        super.viewDidLoad()
         self.setup()
     }
-
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,6 +28,16 @@ class LoginViewController: UIViewController{
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.unregisterKeyboardNotification()
+    }
+    
+    //MARK: - Acciones
+    
+    @IBAction func btnIniciarSesion(_ sender: Any) {
+        self.validarLogin()
+    }
+    
+    @IBAction func tapToCloseKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
     }
     
     //MARK: - Funciones
@@ -60,17 +69,6 @@ class LoginViewController: UIViewController{
                 self.showAlertBasic(title: "Error", message: "La contrasena o el usuario es incorrecto", acceptButton: "Aceptar")
             }
         }
-    }
-    
-    
-    //MARK: - Acciones
-    
-    @IBAction func btnIniciarSesion(_ sender: Any) {
-        self.validarLogin()
-    }
-    
-    @IBAction func tapToCloseKeyboard(_ sender: Any) {
-        self.view.endEditing(true)
     }
 }
 
