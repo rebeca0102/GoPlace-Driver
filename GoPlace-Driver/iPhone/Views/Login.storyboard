@@ -349,9 +349,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="emi-YP-AXN"/>
+                    <connections>
+                        <outlet property="txtApellido" destination="9Bo-5g-yIx" id="zLR-1p-qaG"/>
+                        <outlet property="txtCelular" destination="hy9-Qb-vgq" id="aOt-1B-t7d"/>
+                        <outlet property="txtClave" destination="cJe-Vp-n9K" id="sJ0-vt-AKd"/>
+                        <outlet property="txtCorreo" destination="6u0-6n-Sku" id="069-4I-G7v"/>
+                        <outlet property="txtNombre" destination="2fo-Yy-80W" id="gE5-hm-b3k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKK-bK-J5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oAe-SO-n6D"/>
+                <tapGestureRecognizer id="oAe-SO-n6D">
+                    <connections>
+                        <action selector="tapTocloseKeyboard:" destination="A2M-nI-6dz" id="FEr-Cc-pWh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3888" y="-772"/>
         </scene>
@@ -437,14 +448,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="AH5-CV-faR"/>
                     <connections>
-                        <outlet property="lblTitulo" destination="5ez-eS-zxN" id="hRx-fQ-qdn"/>
-                        <outlet property="txtCorreo" destination="6H9-Ap-kfe" id="DhL-ro-aNY"/>
+                        <outlet property="lblTitulo" destination="5ez-eS-zxN" id="tAk-CP-u5u"/>
+                        <outlet property="txtCorreo" destination="6H9-Ap-kfe" id="MOc-Qd-0vX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAb-NL-3Jy" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="hi7-fc-zuw">
                     <connections>
-                        <action selector="tapTocloseKeyboard:" destination="Pct-Th-cq5" id="hxA-0u-oqA"/>
+                        <action selector="tapCloseKeyboard:" destination="Pct-Th-cq5" id="EOs-dO-mVa"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

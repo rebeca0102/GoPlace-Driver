@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RecoverPasswordViewController: UIViewController{
  
-    @IBOutlet weak var txtCorreoRP: UITextField!
+    @IBOutlet weak var txtCorreo: UITextField!
+    @IBOutlet weak var lblTitulo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lblTitulo.text = "Recuperar\ncontraseña"
     }
     @IBAction func clickBtnArrowBackToLogin(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
@@ -21,22 +24,26 @@ class RecoverPasswordViewController: UIViewController{
         self.view.endEditing(true)
     }
     
-    @IBAction func swipeToOpenKeyboard(_ sender: Any) {
-        self.txtCorreoRP.becomeFirstResponder()
-    }
-    
-    @IBAction func swipeToCloseKeyboard(_ sender: Any) {
-        self.view.endEditing(true)
-    }
-    
-    
     @IBAction func clickBtnRecover(_ sender: Any) {
-        print("Validando campos de entrada")
-        print("Envío de enlace")
-        print("Validando")
-        print("Redirigiendo al View Nueva Contraseña")
-        
-        self.showAlert(title: "Listo!", message: "Se envio un link a tu correo para reestablecer la contraseña.", acceptButton: "Ok!",identifierSegue: "NewPasswordViewController")
+        self.validarYEnvidarSolicitud()
     }
 
+    //MARK: - Funciones
+    
+    func validarYEnvidarSolicitud() {
+        
+        guard let correo = self.txtCorreo.text, correo.count != 0 else {
+            self.showAlertBasic(title: "Error", message: "Ingrese un correo electronico.", acceptButton: "Aceptar")
+            return
+        }
+        
+        Auth.auth().sendPasswordReset(withEmail: correo) { (error) in
+            if let error = error {
+                self.showAlertBasic(title: "Error", message: "Hubo un problema al reestablecer la contrasena", acceptButton: "Ok")
+                print(error)
+            } else {
+                self.showAlertBasic(title: "Listo", message: "Revise su bandeja de entrada", acceptButton: "Ok")
+            }
+        }
+    }
 }
