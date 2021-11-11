@@ -349,21 +349,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="emi-YP-AXN"/>
-                    <connections>
-                        <outlet property="cnsBottomScroll" destination="MfG-O9-zVe" id="fxm-EL-DOa"/>
-                        <outlet property="txtApellido" destination="9Bo-5g-yIx" id="GnL-Wj-tdp"/>
-                        <outlet property="txtCelular" destination="hy9-Qb-vgq" id="STk-Ra-FtH"/>
-                        <outlet property="txtClave" destination="cJe-Vp-n9K" id="7DT-uD-Xiq"/>
-                        <outlet property="txtCorreo" destination="6u0-6n-Sku" id="CO3-b0-xtX"/>
-                        <outlet property="txtNombre" destination="2fo-Yy-80W" id="5Ou-m3-E4K"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKK-bK-J5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oAe-SO-n6D">
-                    <connections>
-                        <action selector="tapToCloseKeyboard:" destination="A2M-nI-6dz" id="NFm-LF-sWe"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oAe-SO-n6D"/>
             </objects>
             <point key="canvasLocation" x="3888" y="-772"/>
         </scene>
@@ -460,7 +448,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3888" y="-77"/>
+            <point key="canvasLocation" x="3887.6923076923076" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>

@@ -67,6 +67,7 @@ class LoginViewController: UIViewController{
     
     @IBAction func btnIniciarSesion(_ sender: Any) {
     }
+    
     @IBAction func tapToCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
