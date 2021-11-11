@@ -21,9 +21,24 @@ extension UIViewController{
     func showAlertToBack(title: String, message: String, acceptButton: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let acceptAction = UIAlertAction(title: acceptButton, style: .default) { action in
+            self.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(acceptAction)
+        self.present(alert,animated: true,completion: nil)
+    }
+    
+    func showAlertToBackToRoot(title: String, message: String, acceptButton: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let acceptAction = UIAlertAction(title: acceptButton, style: .default) { action in
             self.navigationController?.popToRootViewController(animated: true)
         }
         alert.addAction(acceptAction)
         self.present(alert,animated: true,completion: nil)
+    }
+    
+    func showAlertBasic(title: String, message: String, acceptButton: String){
+            let Alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            Alert.addAction(UIAlertAction(title: acceptButton, style: .default))
+            self.present(Alert,animated: true,completion: nil)
     }
 }

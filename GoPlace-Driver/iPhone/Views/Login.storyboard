@@ -26,7 +26,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic.login" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-sb-Jwx">
                                 <rect key="frame" x="42" y="117.66666666666669" width="306" height="162"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=".........." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyl-nf-nlX" userLabel="txtPassword">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=".........." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyl-nf-nlX" userLabel="txtClave">
                                 <rect key="frame" x="25" y="333.66666666666669" width="340" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IIt-LX-20I"/>
@@ -53,6 +53,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.99607843139999996" green="0.41568627450000001" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnIniciarSesion:" destination="Tqd-Ds-Rym" eventType="touchUpInside" id="BxU-y8-8xh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordar contraseña" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htq-RW-Nv1">
                                 <rect key="frame" x="25" y="382.66666666666669" width="286" height="31"/>
@@ -105,6 +108,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pf8-el-ohm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="htq-RW-Nv1" firstAttribute="top" secondItem="hyl-nf-nlX" secondAttribute="bottom" constant="5" id="15C-wR-9Ue"/>
                             <constraint firstItem="OU9-Sp-4S1" firstAttribute="top" secondItem="SSe-sb-Jwx" secondAttribute="bottom" constant="5" id="3LB-5J-u86"/>
@@ -141,13 +145,24 @@
                             <constraint firstItem="OU9-Sp-4S1" firstAttribute="leading" secondItem="oOa-Ln-qHv" secondAttribute="leading" id="v74-Jo-RjT"/>
                             <constraint firstItem="JDX-Ct-Lkz" firstAttribute="centerY" secondItem="htq-RW-Nv1" secondAttribute="centerY" id="x3Q-BO-FkM"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5nX-Ty-RzU" appends="YES" id="M0I-wp-dPf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="c7m-8F-XUu"/>
                     <connections>
+                        <outlet property="cnsBottomClave" destination="15C-wR-9Ue" id="Sy3-tc-lE3"/>
+                        <outlet property="txtClave" destination="hyl-nf-nlX" id="Ook-3x-6il"/>
+                        <outlet property="txtCorreo" destination="OU9-Sp-4S1" id="dPi-dd-Sbd"/>
                         <segue destination="rgG-Hd-exh" kind="show" identifier="HomeViewController" id="ntX-vX-B8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXR-n7-um0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5nX-Ty-RzU">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="Tqd-Ds-Rym" id="nRA-D9-UKv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2860" y="-563.74407582938386"/>
         </scene>
@@ -181,7 +196,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="Bus-GI-Y1F">
             <objects>
-                <viewController id="A2M-nI-6dz" customClass="SignUpViewController" customModule="GoPlace_Client" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="A2M-nI-6dz" customClass="SignUpViewController" customModule="GoPlace_Driver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccS-82-OAx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,7 +370,7 @@
         <!--Recover Password View Controller-->
         <scene sceneID="rHN-8w-1AL">
             <objects>
-                <viewController id="Pct-Th-cq5" customClass="RecoverPasswordViewController" customModule="GoPlace_Client" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pct-Th-cq5" customClass="RecoverPasswordViewController" customModule="GoPlace_Driver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smj-Ee-fIJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
