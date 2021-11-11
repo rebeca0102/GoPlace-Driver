@@ -66,6 +66,7 @@ class LoginViewController: UIViewController{
     //MARK: - Acciones
     
     @IBAction func btnIniciarSesion(_ sender: Any) {
+        self.validarLogin()
     }
     
     @IBAction func tapToCloseKeyboard(_ sender: Any) {

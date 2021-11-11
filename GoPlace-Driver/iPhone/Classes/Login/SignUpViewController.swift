@@ -81,12 +81,12 @@ class SignUpViewController: UIViewController{
 
 
     @IBAction func clickBtnSignUpBackToLogin(_ sender: Any) {
-        self.showAlertToBack(title: "Listo!", message: "Se registraron tus datos correctamente, ahora puedes iniciar sesión.", acceptButton: "Aceptar")
+        self.ValidarYRegistrar()
     }
     
     
     @IBAction func clickBtnBackToLogin(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tapTocloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)

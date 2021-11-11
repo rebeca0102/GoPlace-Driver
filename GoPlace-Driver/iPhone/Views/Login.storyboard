@@ -350,6 +350,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="emi-YP-AXN"/>
                     <connections>
+                        <outlet property="cnsBottomScroll" destination="Jis-qd-Edd" id="TQr-Qh-rUs"/>
                         <outlet property="txtApellido" destination="9Bo-5g-yIx" id="zLR-1p-qaG"/>
                         <outlet property="txtCelular" destination="hy9-Qb-vgq" id="aOt-1B-t7d"/>
                         <outlet property="txtClave" destination="cJe-Vp-n9K" id="sJ0-vt-AKd"/>

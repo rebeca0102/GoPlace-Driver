@@ -21,7 +21,7 @@ class RecoverPasswordViewController: UIViewController{
     //MARK: - Acciones
     
     @IBAction func clickBtnArrowBackToLogin(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tapCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
