@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-iW-0w2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SplashViewController" customModule="GoPlace_Driver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic.login" translatesAutoresizingMaskIntoConstraints="NO" id="72k-pO-jmM">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UGa-FZ-i8u"/>
+                                    <constraint firstAttribute="width" constant="200" id="d78-n3-uQ8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="72k-pO-jmM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3mQ-7b-dEe"/>
+                            <constraint firstItem="72k-pO-jmM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="E6y-pm-ZGg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lo2-fF-WQY"/>
+                    <connections>
+                        <segue destination="yeO-yU-h9Y" kind="show" identifier="LoginViewController" id="HsD-ly-NWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="45.535714285714285"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="xSs-CR-anq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginViewController" id="yeO-yU-h9Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qoj-53-0fs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U78-WO-PYl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579" y="46"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kyj-tX-p7a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="M5b-iW-0w2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="osD-Ln-qiW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="f4s-PR-tvh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fga-a2-rGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic.login" width="306" height="162"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

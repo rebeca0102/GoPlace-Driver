@@ -332,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkH-6l-tuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713.0434782608697" y="45.535714285714285"/>
+            <point key="canvasLocation" x="1951" y="-563"/>
         </scene>
         <!--Recover Password View Controller-->
         <scene sceneID="oLE-U6-J7o">
